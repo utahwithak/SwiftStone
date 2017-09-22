@@ -1,3 +1,3 @@
 [submodule "External/capstone"]
 	path = External/capstone
-	url = https://github.com/aquynh/capstone
+	url = git@github.com:utahwithak/capstone.git
