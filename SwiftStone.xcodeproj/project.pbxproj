@@ -11,11 +11,12 @@
 		8F4E5F8F1F74912700FA572A /* SwiftStoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E5F8E1F74912700FA572A /* SwiftStoneTests.swift */; };
 		8F4E5F911F74912700FA572A /* SwiftStone.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F4E5F831F74912700FA572A /* SwiftStone.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F4E5FCD1F74927C00FA572A /* Capstone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4E5FB11F74923000FA572A /* Capstone.framework */; };
-		8F4E5FCF1F74929000FA572A /* Capstone.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F4E5FB11F74923000FA572A /* Capstone.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8F4E5FD11F7492E000FA572A /* SwiftStone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E5FD01F7492E000FA572A /* SwiftStone.swift */; };
 		8F4E5FD31F7494EE00FA572A /* Architecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E5FD21F7494EE00FA572A /* Architecture.swift */; };
 		8F4E5FD51F7495FB00FA572A /* Mode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E5FD41F7495FB00FA572A /* Mode.swift */; };
 		8F4E5FD71F7498CD00FA572A /* SwiftStone+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4E5FD61F7498CD00FA572A /* SwiftStone+Error.swift */; };
+		8FE8BA9B1F797693005ABC8A /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BA9A1F797693005ABC8A /* Converter.swift */; };
+		8FE8BAAB1F7976EA005ABC8A /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8BAAA1F7976EA005ABC8A /* Instruction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,19 +141,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		8F4E5FCE1F74928300FA572A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				8F4E5FCF1F74929000FA572A /* Capstone.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		8F4E5F801F74912700FA572A /* SwiftStone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftStone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4E5F831F74912700FA572A /* SwiftStone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftStone.h; sourceTree = "<group>"; };
@@ -165,6 +153,8 @@
 		8F4E5FD21F7494EE00FA572A /* Architecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Architecture.swift; sourceTree = "<group>"; };
 		8F4E5FD41F7495FB00FA572A /* Mode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mode.swift; sourceTree = "<group>"; };
 		8F4E5FD61F7498CD00FA572A /* SwiftStone+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftStone+Error.swift"; sourceTree = "<group>"; };
+		8FE8BA9A1F797693005ABC8A /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		8FE8BAAA1F7976EA005ABC8A /* Instruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +201,8 @@
 			children = (
 				8F4E5F831F74912700FA572A /* SwiftStone.h */,
 				8F4E5FD01F7492E000FA572A /* SwiftStone.swift */,
+				8FE8BA9A1F797693005ABC8A /* Converter.swift */,
+				8FE8BAAA1F7976EA005ABC8A /* Instruction.swift */,
 				8F4E5FD21F7494EE00FA572A /* Architecture.swift */,
 				8F4E5FD41F7495FB00FA572A /* Mode.swift */,
 				8F4E5FD61F7498CD00FA572A /* SwiftStone+Error.swift */,
@@ -280,7 +272,6 @@
 				8F4E5F7C1F74912700FA572A /* Frameworks */,
 				8F4E5F7D1F74912700FA572A /* Headers */,
 				8F4E5F7E1F74912700FA572A /* Resources */,
-				8F4E5FCE1F74928300FA572A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -486,10 +477,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FE8BAAB1F7976EA005ABC8A /* Instruction.swift in Sources */,
 				8F4E5FD71F7498CD00FA572A /* SwiftStone+Error.swift in Sources */,
 				8F4E5FD31F7494EE00FA572A /* Architecture.swift in Sources */,
 				8F4E5FD11F7492E000FA572A /* SwiftStone.swift in Sources */,
 				8F4E5FD51F7495FB00FA572A /* Mode.swift in Sources */,
+				8FE8BA9B1F797693005ABC8A /* Converter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,11 +627,11 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = QV4QS82KBT;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -648,6 +641,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.datumapps.SwiftStone;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -659,11 +653,11 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = QV4QS82KBT;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -673,6 +667,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.datumapps.SwiftStone;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};

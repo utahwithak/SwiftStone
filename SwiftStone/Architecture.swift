@@ -9,7 +9,7 @@
 import Foundation
 import Capstone
 
-enum Architecture: UInt32 {
+public enum Architecture: UInt32 {
 
     /// ARM architecture (including Thumb, Thumb-2)
     case arm = 0

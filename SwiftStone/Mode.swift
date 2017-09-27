@@ -9,7 +9,7 @@
 import Foundation
 import Capstone
 
-enum Mode {
+public enum Mode {
     /// little-endian mode (default mode)
     case littleEndian
     /// 32-bit ARM
